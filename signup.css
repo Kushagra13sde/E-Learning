@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-image: linear-gradient(311deg, aqua, #00a1de); */
+    height: 35.5rem;
+    background-image: url('https://www.ocpl.org/sites/ocpl/files/2020-08/a20.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+/*----- NAVEBAR----- */
+header {
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    height: 4.5rem;
+    padding: .2rem .5rem;
+    box-shadow: 0px 2px 10px black;
+    background-color: #4094DE;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+}
+
+.navebar {
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    position: relative;
+    right: 4rem;
+    width: 35%;
+}
+
+.center {
+    /* width: 100%; */
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+
+.navebar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navebar ul li {
+    list-style: none;
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    font-size: 1.3rem;
+    display: flex;
+    font-family: 'Fredoka', sans-serif;
+    color: #003160;
+    position: relative;
+}
+
+.navebar ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.navebar a:hover {
+    text-shadow: 0px 1px 3px black;
+    color: white;
+}
+
+.navebar ul li a:hover::after {
+    width: 95%;
+    color: white;
+}
+
+/* ---------------------------------LOGO------------------------- */
+.logo img {
+    width: 50px;
+    float: left;
+    margin-left: 2rem;
+}
+
+.logo p {
+    display: inline;
+    /* border: 2px solid blueviolet; */
+    width: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.userlogo {
+    /* border: 2px solid purple; */
+    width: 10%;
+    margin: 1px;
+}
+
+.userlogo img {
+    width: 50px;
+}
+
+/* ----------Sign Up Box ----------- */
+.Sign-box{
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    width: 22rem;
+    height: 25rem;
+    position: relative;
+    /* left: 12rem; */
+    top: 2rem;
+    background-color: #319e8f26;
+    border-radius: 13px;
+}
+.Sign-box h1{
+    margin: 5px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+input{
+    margin: 12px;
+    background: #add8e67d;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 7px;
+    width: 16rem;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#checkbox{
+   width: 18px;
+   
+}
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
+/* -------------------------------BUTTON-1---------------------------- */
+.btn1 {
+    padding: .5rem;
+    width: 30%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    color: white;
+    background-color: #003160;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+.btn1:hover {
+    background-color: #4094DE;
+}
+/* --------------------------------BTN IN LOGINPAGE--------------------------- */
+.btn2 {
+    width: 30%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    color: white;
+    height: 2rem;
+    background-color: #003160;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+
+.btn2:hover {
+    color: #4094DE;
+}

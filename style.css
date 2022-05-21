@@ -1,0 +1,843 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ------------------------------------NAVEBAR ---------------------------- */
+header {
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 4.5rem;
+    padding: .2rem .5rem;
+    box-shadow: 0px 2px 10px black;
+    background-color: #4094DE;
+    z-index: 10;
+}
+
+.navebar {
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    width: 35%;
+}
+
+.center {
+    /* width: 100%; */
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+
+.navebar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navebar ul li {
+    list-style: none;
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    font-size: 1.3rem;
+    display: flex;
+    font-family: 'Fredoka', sans-serif;
+    color: #003160;
+    position: relative;
+}
+
+.navebar ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.navebar a:hover {
+    text-shadow: 0px 1px 3px black;
+    color: white;
+}
+
+.navebar ul li a:hover::after {
+    width: 95%;
+    color: white;
+}
+
+/* ---------------------------------LOGO------------------------- */
+.logo img {
+    width: 50px;
+    float: left;
+    margin-left: 2rem;
+}
+
+.logo p {
+    display: inline;
+    /* border: 2px solid blueviolet; */
+    width: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.userlogo {
+    /* border: 2px solid purple; */
+    width: 10%;
+    margin: 1px;
+}
+
+.userlogo img {
+    width: 50px;
+}
+
+/* ---------------------------------CONTAINER-1 ------------------------ */
+.container-1 {
+    /* border: 2px solid black; */
+    height: 36.5rem;
+    background-image: url('https://www.ocpl.org/sites/ocpl/files/2020-08/a20.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-1 {
+    border: 2px solid transparent;
+    text-align: center;
+    width: 49%;
+    margin: auto;
+    height: 25rem;
+    position: relative;
+    top: 6rem;
+
+}
+
+#heading-b-1 {
+    /* border: 2px solid blueviolet; */
+    margin-top: 7.8rem;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(92, 91, 91);
+}
+
+#para-b-1 {
+    padding: .5rem;
+    margin: 1rem;
+    /* color: gray; */
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color: rgb(31, 31, 31);
+}
+
+/* -------------------------------BUTTON-1---------------------------- */
+.btn1 {
+    padding: .5rem;
+    width: 30%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    color: white;
+    background-color: #003160;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+.btn1:hover {
+    background-color: #4094DE;
+}
+
+/* -----------------------------LOGINPAGE  ----------------------------- */
+.loginform {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -120%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* display: none; */
+    transition: all 0.2s;
+    z-index: 1;
+}
+
+.loginform.popup {
+    top: 2rem
+}
+
+/* ------------------------------- LOGIN BOX ----------------------------------- */
+.formBox {
+    border: 2px solid black;
+    width: 25%;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 7px;
+    background-color: #4094DE;
+}
+
+#cross {
+    display: inline;
+    float: right;
+    /* width: 30px; */
+}
+
+#cross img {
+    /* border: 2px solid brown; */
+    width: 35px;
+    cursor: pointer;
+}
+
+#login-h {
+    color: #003160;
+    display: block;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+#ip1 {
+    margin-top: 1.5rem;
+}
+
+input {
+    display: block;
+    margin-top: 1rem;
+    width: 80%;
+    padding: 3px;
+    padding-right: 1rem;
+    height: 1.4rem;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1rem;
+}
+
+::placeholder {
+    margin-left: 1rem;
+}
+
+.formBox p {
+    margin-top: .8rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.formBox a {
+    text-decoration: none;
+    color: #003160;
+    font-weight: bold;
+}
+
+/* --------------------------------BTN IN LOGINPAGE--------------------------- */
+.btn2 {
+    width: 30%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    color: white;
+    height: 2rem;
+    background-color: #003160;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.btn2:hover {
+    color: #4094DE;
+}
+
+/* ----------------------------------CONTAINER-2-------------------------------- */
+.container-2 {
+    height: 37rem;
+    border: 1px solid transparent;
+    background-image: linear-gradient(311deg, aqua, #00a1de);
+
+}
+
+.box-2 {
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: 6rem auto;
+    height: 25rem;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+}
+
+.img-box {
+    /* border: 2px solid plum; */
+    /* height: 10rem; */
+    display: inline-block;
+}
+
+.img-box img {
+    /* border: 2px solid peru; */
+    height: 25rem;
+}
+
+.content-box {
+    margin-left: 1rem;
+    /* border: 2px solid red; */
+    display: block;
+    width: 45%;
+    height: 15rem;
+
+}
+
+#C-2-h1 {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(92, 91, 91);
+    font-size: 1.6rem;
+    /* border: 2px solid gold; */
+}
+
+.content-box p {
+    /* border: 2px solid orange; */
+    padding: 12px;
+    margin-top: .8rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    padding-left: 0px;
+    color: rgb(91, 91, 91);
+    /* color: rgb(31, 31, 31); */
+    /* font-weight: 600; */
+}
+
+.container-3 {
+    height: 66rem;
+    border: 1px solid transparent;
+    /* background-image: linear-gradient(  to right, #00a1de, #45E5AC) ; */
+    background-color: #b4ebff;
+    /* background-color: #0089d0; */
+}
+
+.box-3 {
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: 1.5rem auto;
+    height: 55rem;
+}
+
+#C-3-h1 {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(92, 91, 91);
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+
+}
+
+.Courses {
+    border: 1.9px solid black;
+    height: 22.6rem;
+    border-radius: 7px;
+    width: 18rem;
+    display: flex;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.2s ease;
+}
+.Courses a{
+    color: black;
+    text-decoration: none;
+}
+.Courses:hover {
+    box-shadow: 0px 2px 10px black;
+    transform: translateY(-5px);
+    /* cursor: pointer; */
+}
+
+.course-boxes {
+    /* border: 2px solid magenta; */
+    display: flex;
+    margin: 3rem 2rem;
+    justify-content: space-between;
+}
+
+#cb1 {
+    margin-top: 4rem;
+    /* border: 2px solid plum; */
+}
+
+.imgcon {
+    /* border: 2px solid blue; */
+    height: 10.13rem;
+}
+
+.imgcon img {
+    height: 100%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imgcon #img-1 {
+    height: 10rem;
+    width: 18rem;
+}
+
+.imgcon #img-2 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-3 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-4 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-5 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-6 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.rate {
+    /* border: 2px solid gold; */
+    background-image: linear-gradient(166deg, gold, orange);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 14.8rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* z-index: 0; */
+}
+
+.rating {
+    /* border: 2px solid purple;     */
+    height: 20px;
+    margin: 2px 3px;
+}
+
+.rating img {
+    height: 20px;
+}
+
+.imgcon-h {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    margin: 5px;
+}
+
+.imgcon-p {
+    /* border: 2px solid peru; */
+    padding: 4px;
+    /* width: 17.5rem ; */
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    line-height: 17px;
+    color: gray;
+    margin-bottom: 4px;
+    cursor:default;
+}
+
+.icon-box {
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+
+    /* margin: 10px; */
+}
+
+.icon-box img {
+    height: 18px;
+    /* width: 1.5rem; */
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: relative;
+    margin-top: 3px;
+    /* float: left; */
+}
+
+.calender p {
+    display: inline-block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* font-size: 10px; */
+}
+
+.clock p {
+    display: inline-block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.book p {
+    display: inline-block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* margin-bottom: 1px; */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* height: 2rem; */
+    /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00a0de, #00a0de);
+    border-radius: 6px;
+}
+
+.container-4 {
+    height: 36rem;
+    /* border: 2px solid black; */
+    /* background-color: #00a0de; */
+    background-image: linear-gradient(311deg, aqua, #00a1de);
+    display: flex;
+    flex-direction: column;
+}
+
+.writecontent {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 36rem;
+    flex-direction: column;
+}
+
+.teacherimg {
+    /* display: flex; */
+    /* border: 2px solid palegreen; */
+    width: 100%;
+    background-image: url("media/group-of-teachers.png");
+    background-position: 100px 100px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.teacher-h1 {
+    /* border: 2px solid blue; */
+    display: block;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(92, 91, 91);
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.teachers-p {
+    /* border: 2px solid violet; */
+    display: inline;
+    width: 35%;
+    margin: .5rem auto;
+    color: rgb(91, 91, 91);
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.container-5 {
+    background-image: linear-gradient(358deg, aqua, #00a1de);
+    height: 32rem;
+}
+
+.heading {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    /* height: 36rem; */
+    flex-direction: column;
+}
+
+.contact-h {
+    /* border: 2px solid blue; */
+    display: block;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-shadow: 0px 1px 5px black;
+
+}
+
+.formout{
+    /* border: 2px solid red; */
+
+    display: flex;
+    /* height: 100%; */
+    justify-content: center;
+    /* background-image: url('https://pngimg.com/uploads/teacher/teacher_PNG50.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.formin{
+    border: 2px solid aqua;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.679);
+    height: 22rem;
+    position: relative;
+    top: 1.5rem;
+    border-radius: 7px;
+    /* left: 12rem; */
+    justify-content: center;
+    /* text-align: center; */
+    
+}
+.formin input {
+    display: inline;
+    border: 2px solid aqua;
+    margin: 1rem 1rem ;
+    width: 40%;
+    color: white;
+    /* padding: 3px; */
+    /* padding-right: 1rem; */
+    /* height: 1.4rem; */
+    background-color: plum;
+    /* border: none; */
+    /* border-radius: 4px; */
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    /* font-size: 1rem; */
+    background-color: transparent;
+}
+textarea{
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 2px solid aqua;
+    margin-top: 1rem;
+    color: white;
+}
+.formin button{
+    width: 20%;
+    margin: 1rem 1rem;
+}
+/* ---------------------------------------FOOTER   ------------------------- */
+.footer-b1{
+    background-color: rgba(0, 0, 0, 0.676);
+    height: 11rem;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-b1 h3{
+    /* border: 2px solid red; */
+    display: block;
+    height: 1.3rem;
+    width: 100%;
+    margin: .2rem auto;
+    margin-top: 0px;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+.footer-b1 ul li{
+    /* border: 2px solid plum; */
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: 0.3rem auto   ;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* margin-right:1.7rem ; */
+    align-items: center;
+}
+.itemli{
+    /* border: 2px solid purple; */
+    height: 6rem;
+    display: block;
+}
+.itemli a{
+    color: white;
+    text-decoration: none;
+
+}
+.Branches{
+    color: white;
+    /* border: 2px solid red; */
+    width: 20%;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 1px 3px black;
+    flex-direction: column;
+    height: 10rem;
+
+
+}
+.quick{
+    color: white;
+    /* border: 2px solid blue; */
+    width: 20%;
+    height: 10rem;
+    justify-content: center;
+    font-family: sans-serif;
+    display: flex;
+    text-shadow: 0px 1px 3px black;
+    flex-direction: column;
+}
+.contact{
+    color: white;
+    /* border: 2px solid green; */
+    width: 20%;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 1px 3px black;
+    flex-direction: column;
+    text-align: center;
+    height: 10rem;
+}
+
+.con-2{
+    text-align: center;
+    height: 2rem;
+    border: 2px solid transparent;
+    background-color: rgba(0, 0, 0, 0.867);
+    color: grey;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    font-family: 'Rubik', sans-serif;
+
+    
+}
+.con-2 p{
+    /* border: 2px solid plum; */
+    margin: .2rem;
+}
+
+.revealR{
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 1s ease;
+    /* display: none; */
+}
+
+.revealR.active{
+    transform: translateX(0px);
+    opacity: 1;
+    /* display: block; */
+}
+
+.revealL{
+    position: relative;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 0.8s ease;
+    /* display: none; */
+}
+
+.revealL.active{
+    transform: translateX(0px);
+    opacity: 1;
+    /* display: block; */
+}
+/* -----------------BUTTON SCROLL------------- */
+
+#btnscrolltoup {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color:#00a0de;
+    z-index: 2;
+    box-shadow: 0px 0px 10px black;     
+    transition: all 0.4s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#btnscrolltoup.active {
+    opacity: 1;
+}
+
+
+
+/* ------------------------------MEDIA QUARIES-------------------------------- */
+@media (max-width:765px) {
+    html {
+        font-size: 55%;
+    }
+
+    .logo img {
+        width: 50%;
+        float: left;
+    }
+
+    /* .userlogo{
+        border: 2px solid purple;
+    } */
+    .userlogo img {
+        width: 50%;
+    }
+
+    .logo {
+        /* border: 2px solid green; */
+        width: 10%;
+        height: 100%;
+    }
+
+    header {
+        /* text-align: center; */
+        height: 5rem;
+        /* justify-content: center; */
+    }
+
+    .navebar {
+        width: 30%;
+        /* border: 2px solid red; */
+        margin: auto;
+    }
+
+    .center {
+        width: 100%;
+        /* border: 2px solid blue; */
+    }
+}

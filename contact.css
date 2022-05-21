@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container-5 {
+    background-image: linear-gradient(358deg, aqua, #00a1de);
+    height: 38rem;
+}
+
+.heading {
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    /* height: 36rem; */
+    flex-direction: column;
+}
+
+.contact-h {
+    /* border: 2px solid blue; */
+    display: block;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-shadow: 0px 1px 5px black;
+
+}
+
+.formout{
+    /* border: 2px solid red; */
+
+    display: flex;
+    /* height: 100%; */
+    justify-content: center;
+    /* background-image: url('https://pngimg.com/uploads/teacher/teacher_PNG50.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.formin{
+    border: 2px solid aqua;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.679);
+    height: 22rem;
+    position: relative;
+    top: 1.5rem;
+    border-radius: 7px;
+    /* left: 12rem; */
+    justify-content: center;
+    /* text-align: center; */
+    
+}
+.formin input {
+    display: inline;
+    border: 2px solid aqua;
+    margin: 1rem 1rem ;
+    width: 40%;
+    color: white;
+    /* padding: 3px; */
+    /* padding-right: 1rem; */
+    /* height: 1.4rem; */
+    background-color: plum;
+    /* border: none; */
+    /* border-radius: 4px; */
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    /* font-size: 1rem; */
+    background-color: transparent;
+}
+textarea{
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 2px solid aqua;
+    margin-top: 1rem;
+    color: white;
+}
+.formin button{
+    width: 20%;
+    margin: 1rem 1rem;
+}
+
+/* -------------------------------BUTTON-1---------------------------- */
+.btn1 {
+    padding: .5rem;
+    width: 30%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    color: white;
+    background-color: #003160;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+.btn1:hover {
+    background-color: #4094DE;
+}
+/* --------------------------------BTN IN LOGINPAGE--------------------------- */
+.btn2 {
+    width: 30%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 1rem;
+    color: white;
+    height: 2rem;
+    background-color: #003160;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.btn2:hover {
+    color: #4094DE;
+}
+
+::placeholder {
+    margin-left: 1rem;
+}
+
+.formBox p {
+    margin-top: .8rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.formBox a {
+    text-decoration: none;
+    color: #003160;
+    font-weight: bold;
+}
+input {
+    display: block;
+    margin-top: 1rem;
+    width: 80%;
+    padding: 3px;
+    padding-right: 1rem;
+    height: 1.4rem;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1rem;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    /* height: 2rem; */
+    /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#00a0de, #00a0de);
+    border-radius: 6px;
+}

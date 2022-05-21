@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------------------HEADER--------------------------   */
+header {
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    height: 4.5rem;
+    padding: .2rem .5rem;
+    box-shadow: 0px 2px 10px black;
+    background-color: #4094DE;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+}
+
+.navebar {
+    /* border: 2px solid black; */
+    margin: auto;
+    display: flex;
+    position: relative;
+    right: 4rem;
+    width: 35%;
+}
+
+.center {
+    /* width: 100%; */
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+
+.navebar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navebar ul li {
+    list-style: none;
+}
+
+.navebar ul li a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+    font-size: 1.3rem;
+    display: flex;
+    font-family: 'Fredoka', sans-serif;
+    color: #003160;
+    position: relative;
+}
+
+.navebar ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.navebar a:hover {
+    text-shadow: 0px 1px 3px black;
+    color: white;
+}
+
+.navebar ul li a:hover::after {
+    width: 95%;
+    color: white;
+}
+
+/* ---------------------------------LOGO------------------------- */
+.logo img {
+    width: 50px;
+    float: left;
+    margin-left: 2rem;
+}
+
+.logo p {
+    display: inline;
+    /* border: 2px solid blueviolet; */
+    width: auto;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.userlogo {
+    /* border: 2px solid purple; */
+    width: 10%;
+    margin: 1px;
+}
+
+.userlogo img {
+    width: 50px;
+}
+/* -------------------------------------CONTAINER---------------- */
+.container{
+    /* background-color: aquamarine; */
+    height: 38rem;
+    display: flex;
+}
+
+.main-con{
+    /* border: 2px solid darkblue; */
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    width: 88%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Courses {
+    border: 1.9px solid black;
+    height: 22.6rem;
+    border-radius: 7px;
+    width: 18rem;
+    display: flex;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.2s ease;
+    
+}
+.Courses a{
+    color: black;
+    text-decoration: none;
+}
+.Courses:hover {
+    box-shadow: 0px 2px 10px black;
+    transform: translateY(-5px);
+    /* cursor: pointer; */
+}
+
+.course-boxes {
+    /* border: 2px solid magenta; */
+    display: flex;
+    height: 22.6rem;
+    margin: 3rem 2rem;
+    justify-content: space-between;
+    position: relative;
+    /* top: 5rem; */
+    /* left: 5rem; */
+}
+
+.imgcon {
+    /* border: 2px solid blue; */
+    height: 10.13rem;
+}
+
+.imgcon img {
+    height: 100%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.imgcon #img-1 {
+    /* border: 2px solid bisque; */
+    height: 10rem;
+    width: 18rem;
+}
+
+.imgcon #img-2 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-3 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-4 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-5 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.imgcon #img-6 {
+    /* height:12rem ; */
+    width: 18rem;
+}
+
+.rate {
+    /* border: 2px solid gold; */
+    background-image: linear-gradient(166deg, gold, orange);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 14.8rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 1px 2px black;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* z-index: 0; */
+}
+
+.rating {
+    /* border: 2px solid purple;     */
+    height: 20px;
+    margin: 2px 3px;
+}
+
+.rating img {
+    height: 20px;
+}
+
+.imgcon-h {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    margin: 5px;
+}
+
+.imgcon-p {
+    /* border: 2px solid peru; */
+    padding: 4px;
+    /* width: 17.5rem ; */
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    line-height: 17px;
+    color: gray;
+    margin-bottom: 4px;
+    cursor:default;
+}
+
+.icon-box {
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+
+    /* margin: 10px; */
+}
+
+.icon-box img {
+    height: 18px;
+    /* width: 1.5rem; */
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: relative;
+    margin-top: 3px;
+    /* float: left; */
+}
+
+.calender p {
+    display: inline-block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* font-size: 10px; */
+}
+
+.clock p {
+    display: inline-block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.book p {
+    display: inline-block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* margin-bottom: 1px; */
+}
+
+
+/* -------------------------------------BOX -4 ------------------------- */
+
+.box4{
+    /* border: 2px solid gray; */
+    border-radius: 5px;
+    height: 22.6rem;
+    width: 30rem;
+    padding: 12px;
+}
+#box-4-h{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(92, 91, 91);
+    font-size: 2rem;
+    /* border: 2px solid plum; */
+}
+#box-4-p1{
+    /* text-shadow: 0px 1px 2px black; */
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    margin-bottom:9px ;
+    margin-top: 9px;
+    font-size: 1.5rem;
+    color: gold;
+    font-weight: bolder;
+    /* text-shadow: 0px 1px 5px black; */
+}
+#box-4-p2{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    line-height: 1.5rem;
+    color: gray;
+}
+.pebble-b{
+    /* border: 2px solid grey; */
+    /* width: 50%; */
+    height: 5rem;
+    margin-top: 1rem;
+    padding: 5px;
+    /* display: flex; */
+}
+.pebble{
+    background-color: rgba(128, 128, 128, 0.731);
+    display: flex;
+    height: 1rem;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5.5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 6px 0px 0px;
+    font-weight: 700;
+    font-size: .8rem;
+    transition: all .2s ease;
+    box-shadow: 0px 0px 2px black;
+}
+.pebble:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.pebble a{
+    text-decoration: none;
+    color: white;
+}
+.block1{
+    display: flex;
+    height: 2rem;
+    /* border: 2px solid red; */
+    margin-bottom: 5px;
+    
+}
+.block2{
+    display: flex;
+    height: 2rem;
+    /* border: 2px solid saddlebrown; */
+}
+.btn2 {
+    width: 25%;
+    cursor: pointer;
+    border: 1.5px solid black;
+    /* border-radius: 1rem; */
+    color: white;
+    height: 2rem;
+    background-color: #3475ae;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    box-shadow: 0px 2px 3px black;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 4px;
+    font-weight: 900;
+    transition: all .3s ease;
+}
+
+.btn2:hover {
+    color: black;
+    box-shadow: 0px 2px 10px black;
+    transform: translateY(-5px);
+}
+
